@@ -36,7 +36,7 @@ void Level::handleInput(float dt)
 	{
 		if (input->isKeyDown(sf::Keyboard::R))
 		{
-			gameState->setCurrentState(State::GAME);
+			gameState->setCurrentState(State::LEVEL);
 		}
 	}
 
@@ -95,7 +95,7 @@ void Level::render()
 {
 	beginDraw();
 
-	if (gameState->setCurrentState(State::GAME))
+	if (gameState->setCurrentState(State::LEVEL))
 	{
 		window->draw(circle);
 	}
