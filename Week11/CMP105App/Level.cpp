@@ -19,6 +19,13 @@ Level::~Level()
 // handle user input
 void Level::handleInput(float dt)
 {
+	if (gameState->getCurrentState(State::MENU))
+	{
+		if (key r s pressed)
+		{
+			gameState->setCurrentState(State::GAME);
+		}
+	}
 
 }
 
