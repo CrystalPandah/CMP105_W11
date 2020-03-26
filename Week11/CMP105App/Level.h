@@ -27,4 +27,9 @@ private:
 	Input* input;
 	GameState* gameState;
 	AudioManager* audio;
+
+	/ Moving circle vars
+		sf::CircleShape circle;
+	sf::Vector2<float>	speed;
+	sf::Vector2<int>	dir;
 };
