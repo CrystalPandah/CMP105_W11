@@ -6,6 +6,7 @@
 #include "Framework/GameState.h"
 #include <string>
 #include <iostream>
+#include <SFML/System/Vector2.hpp>
 
 
 class Level{
@@ -28,8 +29,8 @@ private:
 	GameState* gameState;
 	AudioManager* audio;
 
-	/ Moving circle vars
-		sf::CircleShape circle;
+	// Moving circle vars
+	sf::CircleShape circle;
 	sf::Vector2<float>	speed;
 	sf::Vector2<int>	dir;
 };
